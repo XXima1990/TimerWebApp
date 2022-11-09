@@ -1,0 +1,11 @@
+input[type="checkbox"].toggle + label::before {
+    width: 2.1em;
+  }
+  
+  input[type="checkbox"].toggle + label::after {
+    font-size: .5em;
+    height: .9em;
+    left: 0.5px;
+    width: 2em;
+    height: 1.8em;
+  }

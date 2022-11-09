@@ -1,0 +1,31 @@
+#containerTimerAreaZen{
+    position: absolute;
+    top: 580px;
+    height: 180px;
+}
+
+#containerTimerAreaSpecial{
+    position: absolute;
+    top: 580px;
+    height: 180px;
+}
+
+#containerTimerAreaLight {
+    position: absolute;
+    top: 580px;
+    height: 180px;
+}
+
+#containerTimerAreaDark{
+    position: absolute;
+    top: 580px;
+    height: 180px;
+}
+
+.Book{
+    height: 650px;
+}
+
+.Creepy{
+    height: 650px;
+}

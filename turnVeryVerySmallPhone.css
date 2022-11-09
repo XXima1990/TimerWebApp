@@ -1,0 +1,38 @@
+#nav ul li{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+
+#containerTimerAreaZen{
+    position: absolute;
+    top: 170px;
+    height: 110px;
+}
+
+#containerTimerAreaSpecial{
+    position: absolute;
+    top: 170px;
+    height: 110px;
+}
+
+#containerTimerAreaLight {
+    position: absolute;
+    top: 170px;
+    height: 110px;
+}
+
+#containerTimerAreaDark{
+    position: absolute;
+    top: 170px;
+    height: 110px;
+}
+
+.Book{
+    height: 280px;
+}
+
+.Creepy{
+    height: 280px;
+}

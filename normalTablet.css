@@ -1,0 +1,38 @@
+.burger div{
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    margin: 4px;
+}
+
+#containerTimerAreaZen{
+    position: absolute;
+    top: 630px;
+    height: 150px;
+}
+
+#containerTimerAreaSpecial{
+    position: absolute;
+    top: 630px;
+    height: 150px;
+}
+
+#containerTimerAreaLight {
+    position: absolute;
+    top: 630px;
+    height: 150px;
+}
+
+#containerTimerAreaDark{
+    position: absolute;
+    top: 630px;
+    height: 150px;
+}
+
+.Book{
+    height: 700px;
+}
+
+.Creepy{
+    height: 700px;
+}

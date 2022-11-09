@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Timer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" media="screen and (max-device-width: 960px)" href="switchToggle.css">
+<link rel="stylesheet" media="screen and (max-device-width: 810px)" href="tabletToggle.css">
+<link rel="stylesheet" media="screen and (max-device-width: 1000px)" href="tablet.css">
+<link rel="stylesheet" media="screen and (max-device-height: 950px)" href="LongTablet.css">
+<link rel="stylesheet" media="screen and (max-device-height: 840px)" href="normalTablet.css">
+<link rel="stylesheet" media="screen and (max-device-height: 790px)" href="SmallPhone.css">
+<link rel="stylesheet" media="screen and (max-device-height: 740px)" href="turnTablet.css">
+<link rel="stylesheet" media="screen and (max-device-height: 640px)" href="turnSmalltablet.css">
+<link rel="stylesheet" media="screen and (max-device-height: 460px)" href="turnBigPhone.css">
+<link rel="stylesheet" media="screen and (max-device-height: 420px)" href="turnMediumPhone.css">
+<link rel="stylesheet" media="screen and (max-device-height: 370px)" href="turnSmallPhone.css">
+<link rel="stylesheet" media="screen and (max-device-height: 350px)" href="turnVerySmallPhone.css">
+<link rel="stylesheet" media="screen and (max-device-height: 300px)" href="turnVeryVerySmallPhone.css">
+<link rel="manifest" href="manifest.json">
+<script src="scriptZen.js" defer></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!--  navigation menu        -->
+        <div class="navbar">
+            <div id="nav">
+                <ul class="links">
+                    <li><a href="index.html" class="zen">DARK MODE</a></li>
+                    <li><input disabled checked type="checkbox" id="zen" class="toggleZen"><label class="zenLabel zen" for="zen" id="zenLabel">ZEN MODE</label></li>
+                    <li><a href="light.html" class="zen">LIGHT MODE</a></li>
+                    <li><a href="special.html" class="zen">SPECIAL MODE</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- hamburger icon        -->
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div>
+            <img class="Book" src="zenGif.gif" id="Book" alt="#">
+        <img class="Creepy" src="zenFinal.gif" id="Creepy" alt="#">
+            </div>
+        
+            <div id="containerTimerAreaZen">
+            <div class="hourPosition">
+                    <button class="number-input" id="hourMinus">-</button>
+                    <input type="number"  max="99"  min="0" value="0"  id="hour" class="time" placeholder="0">
+                    <button class="number-input" id="hourPlus">+</button>
+            </div>
+            <div class="minutePosition">
+                    <button class="number-input" id="minuteMinus">-</button>
+                    <input type="number"  max="60"  min="0" value="0"  id="minute" class="time" placeholder="0">
+                    <button class="number-input" id="minutePlus">+</button>
+            </div>
+            <div class="secPosition">
+                    <button class="number-input" id="secMinus">-</button>
+                    <input type="number"  max="60"  min="0" value="0"  id="sec" class="time" placeholder="0">
+                    <button class="number-input" id="secPlus"">+</button>
+            </div>
+        <p id="hour-label" class="label">h</p>
+        <p id="min-label" class="label">min</p>
+        <p id="sec-label" class="label">sec</p>
+        
+        <button id="start" class="btnZen">Start</button>
+        <button id="reset" class="btnZen">Reset</button>
+            </div>
+    </div>
+</body>
+</html>

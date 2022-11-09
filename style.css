@@ -1,0 +1,756 @@
+/*           Importing Some Google Font links             */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 90%;
+    background-color: black;
+    text-align: center;
+    color: silver;
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: silver;
+}
+
+.dark:hover{
+    color: rgba(237, 5, 5, 0.71);
+}
+
+.light:hover{
+    color: rgba(255, 255, 255, 0.71);
+}
+
+.zen:hover{
+    color: rgba(5, 237, 5, 0.71);
+}
+
+.special:hover{
+    color: rgba(9, 5, 237, 0.71);
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Styling navigation menu    */
+.navbar{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 40px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.burger:hover{
+    transform: scale(110%);
+    }
+    
+.burger:active{
+    color: silver;
+    transform: scale(105%);
+}
+
+#nav{
+    position: absolute;
+    top: 6px;
+}
+#nav ul{
+    display: flex;
+    width: 100%;
+
+}
+
+#nav ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    list-style: none;
+    margin-top: 7px;
+    margin-inline: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: silver;
+    cursor: pointer;
+}
+
+
+#nav ul li:hover{
+    transform: scale(115%);
+    transition: 0.5s;
+}
+  
+
+#nav ul li:active{
+    transform: scale(105%);
+    transition: 0.1s;
+}
+
+#nav ul li:hover:after{
+    width:100%;
+}
+
+
+#box1{
+    position: absolute;
+    top: 250px;
+    left: 45px;
+    color: red;
+    z-index: 4;
+}
+
+    /* animation of side bar navigation menu links      */
+@keyframes navlinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*toggle Style*/
+input[type="checkbox"].toggleDark {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+  
+input[type="checkbox"].toggleDark + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+input[type="checkbox"].toggleDark + label::before {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: silver;
+    border-radius: 1em;
+    margin-right: .25em;
+    transition: background-color 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggleDark + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: "\2715";
+    font-size: .5em;
+    height: .9em;
+    left: .2em;
+    width: 1.8em;
+    height: 1.8em;
+    color: white;
+    border-radius: 1em;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+  
+
+  
+input[type="checkbox"].toggleDark:checked + label::before {
+    background-color: silver;
+}
+  
+input[type="checkbox"].toggleDark:checked + label::after{
+    content: "\2713";
+    transform: translateX(100%);
+    background-color: rgba(237, 5, 5, 0.71);
+}
+
+
+/*toggle Style*/
+input[type="checkbox"].toggleLight {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+  
+input[type="checkbox"].toggleLight + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+input[type="checkbox"].toggleLight + label::before {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: silver;
+    border-radius: 1em;
+    margin-right: .25em;
+    transition: background-color 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggleLight + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: "\2715";
+    font-size: .5em;
+    height: .9em;
+    left: .2em;
+    width: 1.8em;
+    height: 1.8em;
+    color: white;
+    border-radius: 1em;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+  
+
+  
+input[type="checkbox"].toggleLight:checked + label::before {
+    background-color: silver;
+}
+  
+input[type="checkbox"].toggleLight:checked + label::after{
+    content: "\2713";
+    transform: translateX(100%);
+    background-color: rgba(255, 255, 255, 0.71);
+}
+
+
+/*toggle Style*/
+input[type="checkbox"].toggleZen {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+  
+input[type="checkbox"].toggleZen + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+input[type="checkbox"].toggleZen + label::before {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: silver;
+    border-radius: 1em;
+    margin-right: .25em;
+    transition: background-color 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggleZen + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: "\2715";
+    font-size: .5em;
+    height: .9em;
+    left: .2em;
+    width: 1.8em;
+    height: 1.8em;
+    color: white;
+    border-radius: 1em;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+  
+
+  
+input[type="checkbox"].toggleZen:checked + label::before {
+    background-color: silver;
+}
+  
+input[type="checkbox"].toggleZen:checked + label::after{
+    content: "\2713";
+    transform: translateX(100%);
+    background-color: rgba(5, 237, 5, 0.71);
+}
+
+
+/*toggle Style*/
+input[type="checkbox"].toggleSpecial {
+    opacity: 0;
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+}
+  
+input[type="checkbox"].toggleSpecial + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+input[type="checkbox"].toggleSpecial + label::before {
+    content: "";
+    width: 2em;
+    height: 1em;
+    background-color: silver;
+    border-radius: 1em;
+    margin-right: .25em;
+    transition: background-color 200ms ease-in-out;
+}
+  
+input[type="checkbox"].toggleSpecial + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: "\2715";
+    font-size: .5em;
+    height: .9em;
+    left: .2em;
+    width: 1.8em;
+    height: 1.8em;
+    color: white;
+    border-radius: 1em;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+  
+
+  
+input[type="checkbox"].toggleSpecial:checked + label::before {
+    background-color: silver;
+}
+  
+input[type="checkbox"].toggleSpecial:checked + label::after{
+    content: "\2713";
+    transform: translateX(100%);
+    background-color: rgba(9, 5, 237, 0.71);
+}
+
+
+.Book{
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    border: none;
+    border-radius: .25em;
+}
+
+.Creepy{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+    border: none;
+    border-radius: .25em;
+    object-fit: cover;
+}
+
+#containerTimerAreaDark{
+    position: absolute;
+    top: 600px;
+    height: 200px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 10rem;
+
+    /*width of Elements within container*/
+    display: grid;
+
+    column-width: 40%;
+
+    /*Unterteilung des Containers in 5*3 Blöcke mit der Größe'1fr'; Element untersuchen auf der Website um die Positionen bzw. "Blöcke" zu bestimmen*/
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 30%);
+
+    animation-name: shineDark;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#containerTimerAreaZen{
+    position: absolute;
+    top: 600px;
+    height: 200px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 10rem;
+
+    /*width of Elements within container*/
+    display: grid;
+
+    column-width: 40%;
+
+    /*Unterteilung des Containers in 5*3 Blöcke mit der Größe'1fr'; Element untersuchen auf der Website um die Positionen bzw. "Blöcke" zu bestimmen*/
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 30%);
+
+    animation-name: shineZen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#containerTimerAreaSpecial{
+    position: absolute;
+    top: 600px;
+    height: 200px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 10rem;
+
+    /*width of Elements within container*/
+    display: grid;
+
+    column-width: 40%;
+
+    /*Unterteilung des Containers in 5*3 Blöcke mit der Größe'1fr'; Element untersuchen auf der Website um die Positionen bzw. "Blöcke" zu bestimmen*/
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 30%);
+
+    animation-name: shineSpecial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+#containerTimerAreaLight{
+    position: absolute;
+    top: 600px;
+    height: 200px;
+    width: 100%;
+    border: none;
+    background-color: black;
+    border-radius: 10rem;
+
+    /*width of Elements within container*/
+    display: grid;
+
+    column-width: 40%;
+
+    /*Unterteilung des Containers in 5*3 Blöcke mit der Größe'1fr'; Element untersuchen auf der Website um die Positionen bzw. "Blöcke" zu bestimmen*/
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(3, 30%);
+
+    animation-name: shineLight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+/*Styling Input Elements*/
+input[type="number"] {
+   -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+           appearance: textfield;
+   margin: 0 0 0 15px;
+   padding: 0;
+}
+ input[type=number]::-webkit-inner-spin-button, 
+ input[type=number]::-webkit-outer-spin-button { 
+   -webkit-appearance: none;
+}
+ 
+ .number-input {
+   background-color: transparent;
+   color: white;
+   font-size: 30px;
+   border: none;
+   border-radius: 5rem;
+   width: 3rem;
+   height: 3rem;
+   cursor: pointer;
+}
+
+
+.number-input:hover{
+    transform: scale(1.0);
+}
+
+.number-input:active{
+    transform: scale(1.15);
+    color: white;
+}
+  
+
+/*Hours/Minutes/Seconds Style*/
+.label{
+    margin: 0 ;
+
+    justify-self: center;
+    align-self: center;
+
+}
+
+/*Position of Text Hours-Text*/
+#hour-label{
+    grid-area: 4/2/1/3;
+}
+
+/*Position of Text Minutes-Text*/
+#min-label{
+    grid-area: 4/3/1/4;
+}
+
+/*Position of Text Seconds-Text*/
+#sec-label{
+    grid-area: 4/4/1/5;
+}
+
+
+/*Time-Input-Elements*/
+.time{
+    justify-self: center;
+    align-self: center;
+
+    border: none;
+    background-color: Black;
+    color: silver;
+    font-size: 150%;
+    font-weight: 500;
+    width: 30px;
+    height: 50px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.time:hover{
+    transform: scale(1.1);
+}
+
+.time:active{
+    transform: scale(1.05);
+    color:red;
+}
+
+/*Position of Text Hours-Input*/
+.hourPosition{
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hourMinus{
+    font-size: 250%;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*Position of Text Minutes-Input*/
+.minutePosition{
+    grid-area: 1 / 3 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minuteMinus{
+    font-size: 250%;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*Position of Text Seconds-Input*/
+.secPosition{
+    grid-area: 1 / 4 / 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secMinus{
+    font-size: 250%;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/*Button Style*/
+.btnDark{
+    align-self: center;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+
+    width: 40%;
+    height: 40px;
+
+    font-size: 150%;
+    justify-self: center;
+
+    border-radius: 2rem;
+    animation-name: shineDark;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.btnZen{
+    align-self: center;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+
+    width: 40%;
+    height: 40px;
+
+    font-size: 150%;
+    justify-self: center;
+
+    border-radius: 2rem;
+    animation-name: shineZen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.btnSpecial{
+    align-self: center;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+
+    width: 40%;
+    height: 40px;
+
+    font-size: 150%;
+    justify-self: center;
+
+    border-radius: 2rem;
+    animation-name: shineSpecial;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.btnLight{
+    align-self: center;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+
+    width: 40%;
+    height: 40px;
+
+    font-size: 150%;
+    justify-self: center;
+
+    border-radius: 2rem;
+    animation-name: shineLight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes shineDark{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(237, 5, 5, 0.71);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(237, 5, 5, 0.71);
+    }
+}
+
+@keyframes shineSpecial{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(9, 5, 237, 0.71);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(9, 5, 237, 0.71);
+    }
+}
+
+@keyframes shineZen{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(5, 237, 5, 0.71);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(5, 237, 5, 0.71);
+    }
+}
+
+@keyframes shineLight{
+    0%,100%{
+        box-shadow: 0px 0px 32px -12px rgba(255, 255, 255, 0.71);
+    }
+    50%{
+        box-shadow: 0px 0px 32px 3px rgba(255, 255, 255, 0.71);
+    }
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.btn:active{
+    transform: scale(1.15);
+    color:red;
+}
+
+
+/*Position of Start-Button*/
+#start{
+    grid-area: 3/2/3/4;
+    background-color: dimgray;
+    color: gray;
+}
+
+/*Position of Reset-Button*/
+#reset{
+    grid-area: 3/3/3/5;
+}
+
+/* removing hamburger icon from big screen devices    */
+.burger{
+    display: none;
+}
