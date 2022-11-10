@@ -354,7 +354,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -367,7 +367,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: 0;
     padding: 0;
     z-index: -2;
@@ -378,7 +378,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
 
 #containerTimerAreaDark{
     position: absolute;
-    top: 600px;
+    top: 500px;
     height: 200px;
     width: 100%;
     border: none;
@@ -403,7 +403,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
 
 #containerTimerAreaZen{
     position: absolute;
-    top: 600px;
+    top: 500px;
     height: 200px;
     width: 100%;
     border: none;
@@ -428,7 +428,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
 
 #containerTimerAreaSpecial{
     position: absolute;
-    top: 600px;
+    top: 500px;
     height: 200px;
     width: 100%;
     border: none;
@@ -453,7 +453,7 @@ input[type="checkbox"].toggleSpecial:checked + label::after{
 
 #containerTimerAreaLight{
     position: absolute;
-    top: 600px;
+    top: 500px;
     height: 200px;
     width: 100%;
     border: none;
