@@ -7,32 +7,32 @@
 
 #containerTimerAreaZen{
     position: absolute;
-    top: 500px;
+    top: 700px;
     height: 150px;
 }
 
 #containerTimerAreaSpecial{
     position: absolute;
-    top: 500px;
+    top: 700px;
     height: 150px;
 }
 
 #containerTimerAreaLight {
     position: absolute;
-    top: 500px;
+    top: 700px;
     height: 150px;
 }
 
 #containerTimerAreaDark{
     position: absolute;
-    top: 500px;
+    top: 700px;
     height: 150px;
 }
 
 .Book{
-    height: 580px;
+    height: 780px;
 }
 
 .Creepy{
-    height: 580px;
+    height: 780px;
 }
